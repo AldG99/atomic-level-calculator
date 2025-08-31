@@ -1,0 +1,407 @@
+# ============================================================================
+# .gitignore para Medidor de Radiación v2.287
+# Proyecto C++ con Qt5 y CMake
+# ============================================================================
+
+# ============================================================================
+# DIRECTORIOS DE BUILD Y COMPILACIÓN
+# ============================================================================
+build/
+Build/
+BUILD/
+*/build/
+cmake-build-*/
+out/
+
+# Archivos de CMake generados
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# ============================================================================
+# ARCHIVOS EJECUTABLES Y BINARIOS
+# ============================================================================
+# Ejecutables
+*.exe
+*.out
+*.app
+RadiationMonitor
+RadiationMonitor.exe
+
+# Bibliotecas
+*.so
+*.so.*
+*.dylib
+*.dll
+*.a
+*.lib
+
+# Archivos objeto
+*.o
+*.obj
+*.lo
+*.slo
+*.ko
+
+# ============================================================================
+# ARCHIVOS TEMPORALES DE Qt
+# ============================================================================
+# Qt-specific
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qm
+.qmake.cache
+.qmake.stash
+
+# Qt Creator
+*.autosave
+*.creator
+*.creator.user*
+*.includes
+*.files
+*.config
+*.cflags
+*.cxxflags
+
+# ============================================================================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# ============================================================================
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.dmg
+
+# Windows
+*.lnk
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+.nfs*
+
+# ============================================================================
+# ARCHIVOS DE EDITORES E IDEs
+# ============================================================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Visual Studio
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+*.VC.db
+*.VC.opendb
+
+# CLion / IntelliJ
+.idea/
+*.iws
+*.iml
+*.ipr
+cmake-build-*/
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Eclipse CDT
+.metadata
+.settings/
+.loadpath
+.recommenders
+.project
+.cproject
+
+# Code::Blocks
+*.cbp
+*.layout
+*.depend
+
+# Dev-C++
+*.dev
+
+# ============================================================================
+# HERRAMIENTAS DE DESARROLLO
+# ============================================================================
+# Valgrind
+*.log
+callgrind.out.*
+cachegrind.out.*
+massif.out.*
+
+# GDB
+.gdb_history
+core
+core.*
+
+# Profilers
+gmon.out
+*.gcov
+*.gcda
+*.gcno
+
+# Coverage reports
+coverage/
+*.coverage
+htmlcov/
+
+# ============================================================================
+# GESTORES DE PAQUETES Y DEPENDENCIAS
+# ============================================================================
+# Conan
+conandata.yml
+conanfile.py
+conaninfo.txt
+conanbuildinfo.*
+conan.lock
+
+# vcpkg
+vcpkg_installed/
+.vcpkg-root
+
+# Hunter
+_3rdParty/
+
+# ============================================================================
+# ARCHIVOS DE CONFIGURACIÓN LOCAL
+# ============================================================================
+# Configuraciones locales del desarrollador
+.env
+.env.local
+.env.*.local
+config.local.*
+settings.local.*
+
+# Archivos de configuración de Qt específicos del usuario
+*.ini
+*.conf
+
+# ============================================================================
+# ARCHIVOS DE LOGS Y DEPURACIÓN
+# ============================================================================
+# Logs
+*.log
+logs/
+*.log.*
+
+# Archivos de debug
+*.pdb
+*.ilk
+*.exp
+*.map
+
+# Dumps
+*.dmp
+*.dump
+
+# ============================================================================
+# ARCHIVOS DE RESPALDO Y TEMPORALES
+# ============================================================================
+# Backups
+*.backup
+*.bak
+*.swp
+*.swo
+*~
+.#*
+#*#
+
+# Archivos temporales
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Patches
+*.patch
+*.diff
+*.orig
+*.rej
+
+# ============================================================================
+# ARCHIVOS ESPECÍFICOS DEL PROYECTO
+# ============================================================================
+# Archivos de datos temporales de radiación
+radiation_data_temp.*
+*.rad
+*.geiger
+
+# Archivos de configuración de usuario generados
+user_settings.json
+last_session.dat
+
+# Capturas de pantalla de prueba
+screenshots/
+test_images/
+
+# Archivos de exportación generados por la app
+exports/
+reports/
+*.pdf
+*.csv
+
+# ============================================================================
+# ARCHIVOS DE DOCUMENTACIÓN GENERADOS
+# ============================================================================
+# Doxygen
+docs/html/
+docs/latex/
+docs/man/
+docs/rtf/
+Doxyfile.bak
+
+# Sphinx
+_build/
+_static/
+_templates/
+
+# ============================================================================
+# ARCHIVOS DE TESTING Y QA
+# ============================================================================
+# Unit tests results
+test_results/
+*.xml
+*.junit
+
+# Benchmark results
+benchmark_results/
+*.benchmark
+
+# Memory leak reports
+*.memcheck
+
+# ============================================================================
+# ARCHIVOS DE DISTRIBUCIÓN Y PACKAGING
+# ============================================================================
+# CPack generated files
+_CPack_Packages/
+*.rpm
+*.deb
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+
+# Installer files
+*.nsis
+setup.exe
+install.sh
+
+# ============================================================================
+# ARCHIVOS DE RED Y COLABORACIÓN
+# ============================================================================
+# SSH keys (por seguridad)
+*.pem
+*.key
+id_rsa*
+id_ecdsa*
+id_ed25519*
+
+# Certificados
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# ============================================================================
+# ARCHIVOS DE PERFORMANCE Y PROFILING
+# ============================================================================
+# Perf data
+perf.data*
+*.prof
+
+# Intel VTune
+r???hs/
+r???ui/
+
+# ============================================================================
+# MISCELÁNEO
+# ============================================================================
+# Archivos comprimidos accidentales
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+
+# Archivos de imagen temporales (excepto iconos del proyecto)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+# Pero mantener los recursos del proyecto
+!resources/*.png
+!resources/*.jpg
+!resources/*.ico
+!icons/*
+
+# Archivos de audio temporales
+*.wav
+*.mp3
+*.ogg
+*.flac
+
+# Archivos de video temporales
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# MANUAL_USUARIO
+MANUAL_USUARIO.md
+
+# radiation_monitor_project
+radiation_monitor_project.md
+
+# txt
+CMakeLists.txt
+
+# resources
+resources
